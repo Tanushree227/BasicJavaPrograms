@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class LargestThreeNumbers
@@ -9,8 +11,17 @@ public class LargestThreeNumbers
             int y = sc.nextInt();
             int z = sc.nextInt();
 
-            int large = largestNum(x, y, z);
-            System.out.println("The largest number is: " + large);
+            //Finding largest number using if else 
+            //int large = largestNum(x, y, z);
+            //System.out.println("The largest number is: " + large);
+
+            // Finding largest number using collections
+            ArrayList<Integer> numbers = new ArrayList<>();
+            numbers.add(x);
+            numbers.add(y);
+            numbers.add(z);
+
+            System.out.println("The Largest number is: " +Collections.max(numbers));
         }
     }
 
