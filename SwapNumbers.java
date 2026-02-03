@@ -41,7 +41,6 @@ public class SwapNumbers {
             case 4:
                 System.out.println("Exiting the program.");
                 sc.close();
-                return;
         
             default:
                 break;
